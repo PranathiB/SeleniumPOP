@@ -1,5 +1,4 @@
-
-#Selenium Java Page Object Pattern Boilerplate
+# Selenium Java Page Object Pattern Boilerplate
 
 
 This is a sample template that can be used to get a head start with Selenium Java using Page Object Patterns.  This uses Cleartrip website to write a simple login test with invalid credentials.
@@ -20,3 +19,4 @@ mvn compile
 ```
 mvn test
 ```
+
