@@ -20,3 +20,7 @@ mvn compile
 mvn test
 ```
 
+The pom.xml has dependencies for chromedriver, htmluntidriver and pantomjs. These drivers can be used by changing the driver instance creation
+To run on chrome:
+ mvn test -Dwebdriver.chrome.driver=/path/to/chromedriver
+    
