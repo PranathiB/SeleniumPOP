@@ -12,17 +12,18 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class UIElement {
     private WebDriver driver;
     private String id;
+    private By locator;
     private WebDriverWait wait;
 
-    public UIElement(WebDriver driver, String id) {
+    public UIElement(WebDriver driver, By locator) {
         this.driver = driver;
-        this.id = id;
+        this.locator = locator;
         this.wait = new WebDriverWait(driver,10);
     }
 
     protected WebElement element(){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
-        return driver.findElement(By.id(id));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return driver.findElement(locator);
     }
 
     public void assertContains(String txt) {
