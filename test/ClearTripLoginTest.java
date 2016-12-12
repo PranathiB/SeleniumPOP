@@ -13,7 +13,7 @@ public class ClearTripLoginTest {
 
     @BeforeClass
     public static void setUp() throws Exception {
-        System.setProperty("webdriver.gecko.driver","/Users/pranathb/Downloads/geckodriver");
+        System.setProperty("webdriver.gecko.driver","resources/geckodriver");
         driver = new FirefoxDriver();
     }
 
