@@ -18,7 +18,7 @@
         <dependency>
           <groupId>org.seleniumhq.selenium</groupId>
           <artifactId>selenium-firefox-driver</artifactId>
-          <version>2.53.0</version>
+          <version>3.0.1</version>
         </dependency>
 
         <dependency>
@@ -71,6 +71,7 @@
         </plugin>
 
     </plugins>
+    <testSourceDirectory>test/</testSourceDirectory>
 </build>
 
 </project>
